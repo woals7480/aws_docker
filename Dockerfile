@@ -1,9 +1,10 @@
 FROM node:16
 
 # 패키지 먼저 설치하기
+RUN mkdir myfolder
 COPY ./package.json /myfolder
 COPY ./yarn.lock /myfolder
-WORKDIR /myfolder/
+WORKDIR /myfolder
 RUN yarn install
 
 # 소스코드 복사하기
