@@ -21,7 +21,14 @@ export default function BoardDetail() {
   };
 
   return (
-    <div style={{ margin: "100px", border: "1px solid gray", padding: "20px" }}>
+    <div
+      style={{
+        margin: "100px",
+        border: "1px solid gray",
+        padding: "20px",
+        borderRadius: "5px",
+      }}
+    >
       <div style={{ marginBottom: "10px" }}>작성자 : {dataBoard?.writer}</div>
       <div
         style={{

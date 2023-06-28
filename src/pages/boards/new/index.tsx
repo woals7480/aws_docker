@@ -22,7 +22,12 @@ export default function BoardNew() {
   return (
     <form
       onSubmit={handleSubmit(onClickSubmit)}
-      style={{ margin: "100px", border: "1px solid gray", padding: "20px" }}
+      style={{
+        margin: "100px",
+        border: "1px solid gray",
+        padding: "20px",
+        borderRadius: "5px",
+      }}
     >
       <div style={{ padding: "10px" }}>
         제목 :{" "}

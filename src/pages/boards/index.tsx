@@ -31,7 +31,14 @@ export default function BoardList() {
   };
 
   return (
-    <div style={{ margin: "100px" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <h1 style={{ paddingTop: "40px", paddingBottom: "40px" }}>게시판</h1>
       <div
         style={{
           display: "flex",
@@ -68,12 +75,14 @@ export default function BoardList() {
           <div style={{ width: "25%", textAlign: "center" }}>{el.writer}</div>
         </div>
       ))}
-      <button
-        style={{ padding: "10px", margin: "10px", cursor: "pointer" }}
-        onClick={onClickNew}
-      >
-        작성하기
-      </button>
+      <div style={{ width: "800px", display: "flex", justifyContent: "end" }}>
+        <button
+          style={{ padding: "10px", margin: "10px", cursor: "pointer" }}
+          onClick={onClickNew}
+        >
+          작성하기
+        </button>
+      </div>
     </div>
   );
 }
